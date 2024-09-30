@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="toDoList.css">
+</head>
+
+<body>
+    <div class="todo-container">
+        <h1>ToDo List</h1>
+
+        <div class="input-section">
+            <input type="text" id="newTodo" placeholder="Add a new task">
+            <button id="addTodo" onclick="addTodo()">Add</button>
+        </div>
+
+        <ul id="todoList">
+            <li>
+                <input type="checkbox">
+                <span>Workshop</span>
+                <button style="margin-left: auto" onclick="deleteTodo(1)">Delete</button>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>Lunch</span>
+                <button style="margin-left: auto"onclick="deleteTodo(2)">Delete</button>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>Dinner</span>
+                <button style="margin-left: auto" onclick="deleteTodo(3)">Delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="toDoList.js"></script>
+</body>
+
+</html>
